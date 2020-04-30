@@ -12,10 +12,9 @@ RUN apt-get update \
         supervisor \
     && pecl install mcrypt-1.0.3 \
     && docker-php-ext-install -j$(nproc) iconv \
-    && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ --with-png=/usr/include/ \
+    && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install \
-        mbstring \
         pdo_mysql \
         zip \
         bcmath \
