@@ -1,4 +1,4 @@
-FROM php:7.4.5-apache
+FROM php:7.2.31-apache
 
 RUN apt-get update \  
     && apt-get install -y \
@@ -8,6 +8,7 @@ RUN apt-get update \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
+        ca-certificates \
         wget \
         supervisor \
     && pecl install mcrypt-1.0.3 \
