@@ -8,7 +8,6 @@ RUN apt-get update \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
-        ca-certificates \
         wget \
         supervisor \
     && pecl install mcrypt-1.0.3 \
