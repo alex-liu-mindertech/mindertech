@@ -8,7 +8,6 @@ RUN apt-get update \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
-        ca-certificates \
         wget \
         supervisor \
     && pecl install mcrypt-1.0.3 \
@@ -28,6 +27,6 @@ RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN curl -sS https://getcomposer.org/installer \
-        | php -- --install-dir=/usr/local/bin --filename=composer
+        | php -- --install-dir=/usr/local/bin --filename=composer --version=1.4.2
 
 RUN a2enmod rewrite proxy proxy_connect proxy_http headers
