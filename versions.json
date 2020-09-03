@@ -1,0 +1,13 @@
+{
+  "php": {
+    "ascUrl": "https://www.php.net/distributions/php-7.3.21.tar.xz.asc",
+    "gpgKeys": "CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D",
+    "sha256": "4c8b065746ef776d84b7ae47908c21a79e3d4704b86b60d816716b8697c58ce9",
+    "url": "https://www.php.net/distributions/php-7.3.21.tar.xz",
+    "variants": [
+      "crond",
+      "apache"
+    ],
+    "version": "7.3"
+  }
+}
